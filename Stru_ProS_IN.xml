@@ -1,0 +1,209 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="系统表" msprop:Generator_RowClassName="系统表Row" msprop:Generator_RowEvHandlerName="系统表RowChangeEventHandler" msprop:Generator_RowDeletedName="系统表RowDeleted" msprop:Generator_RowDeletingName="系统表RowDeleting" msprop:Generator_RowEvArgName="系统表RowChangeEvent" msprop:Generator_TablePropName="系统表" msprop:Generator_RowChangedName="系统表RowChanged" msprop:Generator_UserTableName="系统表" msprop:Generator_RowChangingName="系统表RowChanging" msprop:Generator_TableClassName="系统表DataTable" msprop:Generator_TableVarName="table系统表">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="节点ID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="节点ID" msprop:Generator_ColumnPropNameInTable="节点IDColumn" msprop:Generator_ColumnPropNameInRow="节点ID" msprop:Generator_ColumnVarNameInTable="column节点ID" type="xs:int" />
+              <xs:element name="节点名称" msprop:Generator_UserColumnName="节点名称" msprop:Generator_ColumnPropNameInTable="节点名称Column" msprop:Generator_ColumnPropNameInRow="节点名称" msprop:Generator_ColumnVarNameInTable="column节点名称" type="xs:string" default="&quot;非空&quot;" />
+              <xs:element name="节点类型" msprop:Generator_UserColumnName="节点类型" msprop:Generator_ColumnPropNameInTable="节点类型Column" msprop:Generator_ColumnPropNameInRow="节点类型" msprop:Generator_ColumnVarNameInTable="column节点类型" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="有效性" msprop:Generator_UserColumnName="有效性" msprop:Generator_ColumnPropNameInTable="有效性Column" msprop:Generator_ColumnPropNameInRow="有效性" msprop:Generator_ColumnVarNameInTable="column有效性" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="源节点ID" msprop:Generator_UserColumnName="源节点ID" msprop:Generator_ColumnPropNameInTable="源节点IDColumn" msprop:Generator_ColumnPropNameInRow="源节点ID" msprop:Generator_ColumnVarNameInTable="column源节点ID" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="宿节点ID" msprop:Generator_UserColumnName="宿节点ID" msprop:Generator_ColumnPropNameInTable="宿节点IDColumn" msprop:Generator_ColumnPropNameInRow="宿节点ID" msprop:Generator_ColumnVarNameInTable="column宿节点ID" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IT01" msprop:Generator_UserColumnName="IT01" msprop:Generator_ColumnPropNameInTable="IT01Column" msprop:Generator_ColumnPropNameInRow="IT01" msprop:Generator_ColumnVarNameInTable="columnIT01" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IT02" msprop:Generator_UserColumnName="IT02" msprop:Generator_ColumnPropNameInTable="IT02Column" msprop:Generator_ColumnPropNameInRow="IT02" msprop:Generator_ColumnVarNameInTable="columnIT02" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IT03" msprop:Generator_UserColumnName="IT03" msprop:Generator_ColumnPropNameInTable="IT03Column" msprop:Generator_ColumnPropNameInRow="IT03" msprop:Generator_ColumnVarNameInTable="columnIT03" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IT04" msprop:Generator_UserColumnName="IT04" msprop:Generator_ColumnPropNameInTable="IT04Column" msprop:Generator_ColumnPropNameInRow="IT04" msprop:Generator_ColumnVarNameInTable="columnIT04" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IT05" msprop:Generator_UserColumnName="IT05" msprop:Generator_ColumnPropNameInTable="IT05Column" msprop:Generator_ColumnPropNameInRow="IT05" msprop:Generator_ColumnVarNameInTable="columnIT05" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ST01" msprop:Generator_UserColumnName="ST01" msprop:Generator_ColumnPropNameInTable="ST01Column" msprop:Generator_ColumnPropNameInRow="ST01" msprop:Generator_ColumnVarNameInTable="columnST01" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST02" msprop:Generator_UserColumnName="ST02" msprop:Generator_ColumnPropNameInTable="ST02Column" msprop:Generator_ColumnPropNameInRow="ST02" msprop:Generator_ColumnVarNameInTable="columnST02" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST03" msprop:Generator_UserColumnName="ST03" msprop:Generator_ColumnPropNameInTable="ST03Column" msprop:Generator_ColumnPropNameInRow="ST03" msprop:Generator_ColumnVarNameInTable="columnST03" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST04" msprop:Generator_UserColumnName="ST04" msprop:Generator_ColumnPropNameInTable="ST04Column" msprop:Generator_ColumnPropNameInRow="ST04" msprop:Generator_ColumnVarNameInTable="columnST04" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST05" msprop:Generator_UserColumnName="ST05" msprop:Generator_ColumnPropNameInTable="ST05Column" msprop:Generator_ColumnPropNameInRow="ST05" msprop:Generator_ColumnVarNameInTable="columnST05" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST06" msprop:Generator_UserColumnName="ST06" msprop:Generator_ColumnPropNameInTable="ST06Column" msprop:Generator_ColumnPropNameInRow="ST06" msprop:Generator_ColumnVarNameInTable="columnST06" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST07" msprop:Generator_UserColumnName="ST07" msprop:Generator_ColumnPropNameInTable="ST07Column" msprop:Generator_ColumnPropNameInRow="ST07" msprop:Generator_ColumnVarNameInTable="columnST07" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST08" msprop:Generator_UserColumnName="ST08" msprop:Generator_ColumnPropNameInTable="ST08Column" msprop:Generator_ColumnPropNameInRow="ST08" msprop:Generator_ColumnVarNameInTable="columnST08" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST09" msprop:Generator_UserColumnName="ST09" msprop:Generator_ColumnPropNameInTable="ST09Column" msprop:Generator_ColumnPropNameInRow="ST09" msprop:Generator_ColumnVarNameInTable="columnST09" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST10" msprop:Generator_UserColumnName="ST10" msprop:Generator_ColumnPropNameInTable="ST10Column" msprop:Generator_ColumnPropNameInRow="ST10" msprop:Generator_ColumnVarNameInTable="columnST10" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST11" msprop:Generator_UserColumnName="ST11" msprop:Generator_ColumnPropNameInTable="ST11Column" msprop:Generator_ColumnPropNameInRow="ST11" msprop:Generator_ColumnVarNameInTable="columnST11" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST12" msprop:Generator_UserColumnName="ST12" msprop:Generator_ColumnPropNameInTable="ST12Column" msprop:Generator_ColumnPropNameInRow="ST12" msprop:Generator_ColumnVarNameInTable="columnST12" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST13" msprop:Generator_UserColumnName="ST13" msprop:Generator_ColumnPropNameInTable="ST13Column" msprop:Generator_ColumnPropNameInRow="ST13" msprop:Generator_ColumnVarNameInTable="columnST13" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST14" msprop:Generator_UserColumnName="ST14" msprop:Generator_ColumnPropNameInTable="ST14Column" msprop:Generator_ColumnPropNameInRow="ST14" msprop:Generator_ColumnVarNameInTable="columnST14" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="ST15" msprop:Generator_UserColumnName="ST15" msprop:Generator_ColumnPropNameInTable="ST15Column" msprop:Generator_ColumnPropNameInRow="ST15" msprop:Generator_ColumnVarNameInTable="columnST15" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="CH01" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="CH01Column" msprop:Generator_ColumnPropNameInRow="CH01" msprop:Generator_UserColumnName="CH01" msprop:Generator_ColumnVarNameInTable="columnCH01" type="xs:string" minOccurs="0" />
+              <xs:element name="CH02" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="CH02Column" msprop:Generator_ColumnPropNameInRow="CH02" msprop:Generator_UserColumnName="CH02" msprop:Generator_ColumnVarNameInTable="columnCH02" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="年曲线" msprop:Generator_RowClassName="年曲线Row" msprop:Generator_RowEvHandlerName="年曲线RowChangeEventHandler" msprop:Generator_RowDeletedName="年曲线RowDeleted" msprop:Generator_RowDeletingName="年曲线RowDeleting" msprop:Generator_RowEvArgName="年曲线RowChangeEvent" msprop:Generator_TablePropName="年曲线" msprop:Generator_RowChangedName="年曲线RowChanged" msprop:Generator_UserTableName="年曲线" msprop:Generator_RowChangingName="年曲线RowChanging" msprop:Generator_TableClassName="年曲线DataTable" msprop:Generator_TableVarName="table年曲线">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnPropNameInTable="序号Column" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnVarNameInTable="column序号" type="xs:int" />
+              <xs:element name="YrID" msprop:Generator_UserColumnName="YrID" msprop:Generator_ColumnPropNameInTable="YrIDColumn" msprop:Generator_ColumnPropNameInRow="YrID" msprop:Generator_ColumnVarNameInTable="columnYrID" type="xs:int" />
+              <xs:element name="数据简述" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="数据简述Column" msprop:Generator_ColumnPropNameInRow="数据简述" msprop:Generator_UserColumnName="数据简述" msprop:Generator_ColumnVarNameInTable="column数据简述" type="xs:string" minOccurs="0" />
+              <xs:element name="有效性" msprop:Generator_UserColumnName="有效性" msprop:Generator_ColumnPropNameInTable="有效性Column" msprop:Generator_ColumnPropNameInRow="有效性" msprop:Generator_ColumnVarNameInTable="column有效性" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="有效年份" msprop:Generator_UserColumnName="有效年份" msprop:Generator_ColumnPropNameInTable="有效年份Column" msprop:Generator_ColumnPropNameInRow="有效年份" msprop:Generator_ColumnVarNameInTable="column有效年份" type="xs:int" default="201099" minOccurs="0" />
+              <xs:element name="数据标志" msprop:Generator_UserColumnName="数据标志" msprop:Generator_ColumnPropNameInTable="数据标志Column" msprop:Generator_ColumnPropNameInRow="数据标志" msprop:Generator_ColumnVarNameInTable="column数据标志" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="数据类型" msprop:Generator_UserColumnName="数据类型" msprop:Generator_ColumnPropNameInTable="数据类型Column" msprop:Generator_ColumnPropNameInRow="数据类型" msprop:Generator_ColumnVarNameInTable="column数据类型" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="M1" msprop:Generator_UserColumnName="M1" msprop:Generator_ColumnPropNameInTable="M1Column" msprop:Generator_ColumnPropNameInRow="M1" msprop:Generator_ColumnVarNameInTable="columnM1" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M2" msprop:Generator_UserColumnName="M2" msprop:Generator_ColumnPropNameInTable="M2Column" msprop:Generator_ColumnPropNameInRow="M2" msprop:Generator_ColumnVarNameInTable="columnM2" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M3" msprop:Generator_UserColumnName="M3" msprop:Generator_ColumnPropNameInTable="M3Column" msprop:Generator_ColumnPropNameInRow="M3" msprop:Generator_ColumnVarNameInTable="columnM3" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M4" msprop:Generator_UserColumnName="M4" msprop:Generator_ColumnPropNameInTable="M4Column" msprop:Generator_ColumnPropNameInRow="M4" msprop:Generator_ColumnVarNameInTable="columnM4" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M5" msprop:Generator_UserColumnName="M5" msprop:Generator_ColumnPropNameInTable="M5Column" msprop:Generator_ColumnPropNameInRow="M5" msprop:Generator_ColumnVarNameInTable="columnM5" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M6" msprop:Generator_UserColumnName="M6" msprop:Generator_ColumnPropNameInTable="M6Column" msprop:Generator_ColumnPropNameInRow="M6" msprop:Generator_ColumnVarNameInTable="columnM6" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M7" msprop:Generator_UserColumnName="M7" msprop:Generator_ColumnPropNameInTable="M7Column" msprop:Generator_ColumnPropNameInRow="M7" msprop:Generator_ColumnVarNameInTable="columnM7" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M8" msprop:Generator_UserColumnName="M8" msprop:Generator_ColumnPropNameInTable="M8Column" msprop:Generator_ColumnPropNameInRow="M8" msprop:Generator_ColumnVarNameInTable="columnM8" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M9" msprop:Generator_UserColumnName="M9" msprop:Generator_ColumnPropNameInTable="M9Column" msprop:Generator_ColumnPropNameInRow="M9" msprop:Generator_ColumnVarNameInTable="columnM9" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M10" msprop:Generator_UserColumnName="M10" msprop:Generator_ColumnPropNameInTable="M10Column" msprop:Generator_ColumnPropNameInRow="M10" msprop:Generator_ColumnVarNameInTable="columnM10" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M11" msprop:Generator_UserColumnName="M11" msprop:Generator_ColumnPropNameInTable="M11Column" msprop:Generator_ColumnPropNameInRow="M11" msprop:Generator_ColumnVarNameInTable="columnM11" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="M12" msprop:Generator_UserColumnName="M12" msprop:Generator_ColumnPropNameInTable="M12Column" msprop:Generator_ColumnPropNameInRow="M12" msprop:Generator_ColumnVarNameInTable="columnM12" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="日曲线" msprop:Generator_RowClassName="日曲线Row" msprop:Generator_RowEvHandlerName="日曲线RowChangeEventHandler" msprop:Generator_RowDeletedName="日曲线RowDeleted" msprop:Generator_RowDeletingName="日曲线RowDeleting" msprop:Generator_RowEvArgName="日曲线RowChangeEvent" msprop:Generator_TablePropName="日曲线" msprop:Generator_RowChangedName="日曲线RowChanged" msprop:Generator_UserTableName="日曲线" msprop:Generator_RowChangingName="日曲线RowChanging" msprop:Generator_TableClassName="日曲线DataTable" msprop:Generator_TableVarName="table日曲线">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnPropNameInTable="序号Column" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnVarNameInTable="column序号" type="xs:int" />
+              <xs:element name="DayID" msprop:Generator_UserColumnName="DayID" msprop:Generator_ColumnPropNameInTable="DayIDColumn" msprop:Generator_ColumnPropNameInRow="DayID" msprop:Generator_ColumnVarNameInTable="columnDayID" type="xs:int" minOccurs="0" />
+              <xs:element name="数据简述" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="数据简述Column" msprop:Generator_ColumnPropNameInRow="数据简述" msprop:Generator_UserColumnName="数据简述" msprop:Generator_ColumnVarNameInTable="column数据简述" type="xs:string" minOccurs="0" />
+              <xs:element name="有效性" msprop:Generator_UserColumnName="有效性" msprop:Generator_ColumnPropNameInTable="有效性Column" msprop:Generator_ColumnPropNameInRow="有效性" msprop:Generator_ColumnVarNameInTable="column有效性" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="有效年份" msprop:Generator_UserColumnName="有效年份" msprop:Generator_ColumnPropNameInTable="有效年份Column" msprop:Generator_ColumnPropNameInRow="有效年份" msprop:Generator_ColumnVarNameInTable="column有效年份" type="xs:int" default="201099" minOccurs="0" />
+              <xs:element name="有效月份" msprop:Generator_UserColumnName="有效月份" msprop:Generator_ColumnPropNameInTable="有效月份Column" msprop:Generator_ColumnPropNameInRow="有效月份" msprop:Generator_ColumnVarNameInTable="column有效月份" type="xs:int" default="112" minOccurs="0" />
+              <xs:element name="有效星期" msprop:Generator_UserColumnName="有效星期" msprop:Generator_ColumnPropNameInTable="有效星期Column" msprop:Generator_ColumnPropNameInRow="有效星期" msprop:Generator_ColumnVarNameInTable="column有效星期" type="xs:int" default="8" minOccurs="0" />
+              <xs:element name="场景类型" msprop:Generator_UserColumnName="场景类型" msprop:Generator_ColumnPropNameInTable="场景类型Column" msprop:Generator_ColumnPropNameInRow="场景类型" msprop:Generator_ColumnVarNameInTable="column场景类型" type="xs:int" default="31" minOccurs="0" />
+              <xs:element name="H1" msprop:Generator_UserColumnName="H1" msprop:Generator_ColumnPropNameInTable="H1Column" msprop:Generator_ColumnPropNameInRow="H1" msprop:Generator_ColumnVarNameInTable="columnH1" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H2" msprop:Generator_UserColumnName="H2" msprop:Generator_ColumnPropNameInTable="H2Column" msprop:Generator_ColumnPropNameInRow="H2" msprop:Generator_ColumnVarNameInTable="columnH2" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H3" msprop:Generator_UserColumnName="H3" msprop:Generator_ColumnPropNameInTable="H3Column" msprop:Generator_ColumnPropNameInRow="H3" msprop:Generator_ColumnVarNameInTable="columnH3" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H4" msprop:Generator_UserColumnName="H4" msprop:Generator_ColumnPropNameInTable="H4Column" msprop:Generator_ColumnPropNameInRow="H4" msprop:Generator_ColumnVarNameInTable="columnH4" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H5" msprop:Generator_UserColumnName="H5" msprop:Generator_ColumnPropNameInTable="H5Column" msprop:Generator_ColumnPropNameInRow="H5" msprop:Generator_ColumnVarNameInTable="columnH5" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H6" msprop:Generator_UserColumnName="H6" msprop:Generator_ColumnPropNameInTable="H6Column" msprop:Generator_ColumnPropNameInRow="H6" msprop:Generator_ColumnVarNameInTable="columnH6" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H7" msprop:Generator_UserColumnName="H7" msprop:Generator_ColumnPropNameInTable="H7Column" msprop:Generator_ColumnPropNameInRow="H7" msprop:Generator_ColumnVarNameInTable="columnH7" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H8" msprop:Generator_UserColumnName="H8" msprop:Generator_ColumnPropNameInTable="H8Column" msprop:Generator_ColumnPropNameInRow="H8" msprop:Generator_ColumnVarNameInTable="columnH8" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H9" msprop:Generator_UserColumnName="H9" msprop:Generator_ColumnPropNameInTable="H9Column" msprop:Generator_ColumnPropNameInRow="H9" msprop:Generator_ColumnVarNameInTable="columnH9" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H10" msprop:Generator_UserColumnName="H10" msprop:Generator_ColumnPropNameInTable="H10Column" msprop:Generator_ColumnPropNameInRow="H10" msprop:Generator_ColumnVarNameInTable="columnH10" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H11" msprop:Generator_UserColumnName="H11" msprop:Generator_ColumnPropNameInTable="H11Column" msprop:Generator_ColumnPropNameInRow="H11" msprop:Generator_ColumnVarNameInTable="columnH11" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H12" msprop:Generator_UserColumnName="H12" msprop:Generator_ColumnPropNameInTable="H12Column" msprop:Generator_ColumnPropNameInRow="H12" msprop:Generator_ColumnVarNameInTable="columnH12" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H13" msprop:Generator_UserColumnName="H13" msprop:Generator_ColumnPropNameInTable="H13Column" msprop:Generator_ColumnPropNameInRow="H13" msprop:Generator_ColumnVarNameInTable="columnH13" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H14" msprop:Generator_UserColumnName="H14" msprop:Generator_ColumnPropNameInTable="H14Column" msprop:Generator_ColumnPropNameInRow="H14" msprop:Generator_ColumnVarNameInTable="columnH14" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H15" msprop:Generator_UserColumnName="H15" msprop:Generator_ColumnPropNameInTable="H15Column" msprop:Generator_ColumnPropNameInRow="H15" msprop:Generator_ColumnVarNameInTable="columnH15" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H16" msprop:Generator_UserColumnName="H16" msprop:Generator_ColumnPropNameInTable="H16Column" msprop:Generator_ColumnPropNameInRow="H16" msprop:Generator_ColumnVarNameInTable="columnH16" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H17" msprop:Generator_UserColumnName="H17" msprop:Generator_ColumnPropNameInTable="H17Column" msprop:Generator_ColumnPropNameInRow="H17" msprop:Generator_ColumnVarNameInTable="columnH17" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H18" msprop:Generator_UserColumnName="H18" msprop:Generator_ColumnPropNameInTable="H18Column" msprop:Generator_ColumnPropNameInRow="H18" msprop:Generator_ColumnVarNameInTable="columnH18" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H19" msprop:Generator_UserColumnName="H19" msprop:Generator_ColumnPropNameInTable="H19Column" msprop:Generator_ColumnPropNameInRow="H19" msprop:Generator_ColumnVarNameInTable="columnH19" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H20" msprop:Generator_UserColumnName="H20" msprop:Generator_ColumnPropNameInTable="H20Column" msprop:Generator_ColumnPropNameInRow="H20" msprop:Generator_ColumnVarNameInTable="columnH20" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H21" msprop:Generator_UserColumnName="H21" msprop:Generator_ColumnPropNameInTable="H21Column" msprop:Generator_ColumnPropNameInRow="H21" msprop:Generator_ColumnVarNameInTable="columnH21" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H22" msprop:Generator_UserColumnName="H22" msprop:Generator_ColumnPropNameInTable="H22Column" msprop:Generator_ColumnPropNameInRow="H22" msprop:Generator_ColumnVarNameInTable="columnH22" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H23" msprop:Generator_UserColumnName="H23" msprop:Generator_ColumnPropNameInTable="H23Column" msprop:Generator_ColumnPropNameInRow="H23" msprop:Generator_ColumnVarNameInTable="columnH23" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="H24" msprop:Generator_UserColumnName="H24" msprop:Generator_ColumnPropNameInTable="H24Column" msprop:Generator_ColumnPropNameInRow="H24" msprop:Generator_ColumnVarNameInTable="columnH24" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="机组表" msprop:Generator_RowClassName="机组表Row" msprop:Generator_RowEvHandlerName="机组表RowChangeEventHandler" msprop:Generator_RowDeletedName="机组表RowDeleted" msprop:Generator_RowDeletingName="机组表RowDeleting" msprop:Generator_RowEvArgName="机组表RowChangeEvent" msprop:Generator_TablePropName="机组表" msprop:Generator_RowChangedName="机组表RowChanged" msprop:Generator_UserTableName="机组表" msprop:Generator_RowChangingName="机组表RowChanging" msprop:Generator_TableClassName="机组表DataTable" msprop:Generator_TableVarName="table机组表">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="机组ID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="机组ID" msprop:Generator_ColumnPropNameInTable="机组IDColumn" msprop:Generator_ColumnPropNameInRow="机组ID" msprop:Generator_ColumnVarNameInTable="column机组ID" type="xs:int" />
+              <xs:element name="电站ID" msprop:Generator_UserColumnName="电站ID" msprop:Generator_ColumnPropNameInTable="电站IDColumn" msprop:Generator_ColumnPropNameInRow="电站ID" msprop:Generator_ColumnVarNameInTable="column电站ID" type="xs:int" minOccurs="0" />
+              <xs:element name="有效性" msprop:Generator_UserColumnName="有效性" msprop:Generator_ColumnPropNameInTable="有效性Column" msprop:Generator_ColumnPropNameInRow="有效性" msprop:Generator_ColumnVarNameInTable="column有效性" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="机组名称" msprop:Generator_UserColumnName="机组名称" msprop:Generator_ColumnPropNameInTable="机组名称Column" msprop:Generator_ColumnPropNameInRow="机组名称" msprop:Generator_ColumnVarNameInTable="column机组名称" type="xs:string" default="&quot;非空&quot;" minOccurs="0" />
+              <xs:element name="单机容量" msprop:Generator_UserColumnName="单机容量" msprop:Generator_ColumnPropNameInTable="单机容量Column" msprop:Generator_ColumnPropNameInRow="单机容量" msprop:Generator_ColumnVarNameInTable="column单机容量" type="xs:double" default="600" minOccurs="0" />
+              <xs:element name="台数" msprop:Generator_UserColumnName="台数" msprop:Generator_ColumnPropNameInTable="台数Column" msprop:Generator_ColumnPropNameInRow="台数" msprop:Generator_ColumnVarNameInTable="column台数" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="EFOR" msprop:Generator_UserColumnName="EFOR" msprop:Generator_ColumnPropNameInTable="EFORColumn" msprop:Generator_ColumnPropNameInRow="EFOR" msprop:Generator_ColumnVarNameInTable="columnEFOR" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="检修时间" msprop:Generator_UserColumnName="检修时间" msprop:Generator_ColumnPropNameInTable="检修时间Column" msprop:Generator_ColumnPropNameInRow="检修时间" msprop:Generator_ColumnVarNameInTable="column检修时间" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="机组特性" msprop:Generator_UserColumnName="机组特性" msprop:Generator_ColumnPropNameInTable="机组特性Column" msprop:Generator_ColumnPropNameInRow="机组特性" msprop:Generator_ColumnVarNameInTable="column机组特性" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="运行约束" msprop:Generator_UserColumnName="运行约束" msprop:Generator_ColumnPropNameInTable="运行约束Column" msprop:Generator_ColumnPropNameInRow="运行约束" msprop:Generator_ColumnVarNameInTable="column运行约束" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="技术出力率" msprop:Generator_UserColumnName="技术出力率" msprop:Generator_ColumnPropNameInTable="技术出力率Column" msprop:Generator_ColumnPropNameInRow="技术出力率" msprop:Generator_ColumnVarNameInTable="column技术出力率" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="爬坡率" msprop:Generator_UserColumnName="爬坡率" msprop:Generator_ColumnPropNameInTable="爬坡率Column" msprop:Generator_ColumnPropNameInRow="爬坡率" msprop:Generator_ColumnVarNameInTable="column爬坡率" type="xs:double" default="0.03" minOccurs="0" />
+              <xs:element name="投产年月" msprop:Generator_UserColumnName="投产年月" msprop:Generator_ColumnPropNameInTable="投产年月Column" msprop:Generator_ColumnPropNameInRow="投产年月" msprop:Generator_ColumnVarNameInTable="column投产年月" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="投产进度" msprop:Generator_UserColumnName="投产进度" msprop:Generator_ColumnPropNameInTable="投产进度Column" msprop:Generator_ColumnPropNameInRow="投产进度" msprop:Generator_ColumnVarNameInTable="column投产进度" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="退役年月" msprop:Generator_UserColumnName="退役年月" msprop:Generator_ColumnPropNameInTable="退役年月Column" msprop:Generator_ColumnPropNameInRow="退役年月" msprop:Generator_ColumnVarNameInTable="column退役年月" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="退役进度" msprop:Generator_UserColumnName="退役进度" msprop:Generator_ColumnPropNameInTable="退役进度Column" msprop:Generator_ColumnPropNameInRow="退役进度" msprop:Generator_ColumnVarNameInTable="column退役进度" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="动态投资" msprop:Generator_UserColumnName="动态投资" msprop:Generator_ColumnPropNameInTable="动态投资Column" msprop:Generator_ColumnPropNameInRow="动态投资" msprop:Generator_ColumnVarNameInTable="column动态投资" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="输变电投资" msprop:Generator_UserColumnName="输变电投资" msprop:Generator_ColumnPropNameInTable="输变电投资Column" msprop:Generator_ColumnPropNameInRow="输变电投资" msprop:Generator_ColumnVarNameInTable="column输变电投资" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="维护费率" msprop:Generator_UserColumnName="维护费率" msprop:Generator_ColumnPropNameInTable="维护费率Column" msprop:Generator_ColumnPropNameInRow="维护费率" msprop:Generator_ColumnVarNameInTable="column维护费率" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="运行费" msprop:Generator_UserColumnName="运行费" msprop:Generator_ColumnPropNameInTable="运行费Column" msprop:Generator_ColumnPropNameInRow="运行费" msprop:Generator_ColumnVarNameInTable="column运行费" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="单耗" msprop:Generator_UserColumnName="单耗" msprop:Generator_ColumnPropNameInTable="单耗Column" msprop:Generator_ColumnPropNameInRow="单耗" msprop:Generator_ColumnVarNameInTable="column单耗" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="单价" msprop:Generator_UserColumnName="单价" msprop:Generator_ColumnPropNameInTable="单价Column" msprop:Generator_ColumnPropNameInRow="单价" msprop:Generator_ColumnVarNameInTable="column单价" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="上网电价" msprop:Generator_UserColumnName="上网电价" msprop:Generator_ColumnPropNameInTable="上网电价Column" msprop:Generator_ColumnPropNameInRow="上网电价" msprop:Generator_ColumnVarNameInTable="column上网电价" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="汛期电价" msprop:Generator_UserColumnName="汛期电价" msprop:Generator_ColumnPropNameInTable="汛期电价Column" msprop:Generator_ColumnPropNameInRow="汛期电价" msprop:Generator_ColumnVarNameInTable="column汛期电价" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="接入电压" msprop:Generator_UserColumnName="接入电压" msprop:Generator_ColumnPropNameInTable="接入电压Column" msprop:Generator_ColumnPropNameInRow="接入电压" msprop:Generator_ColumnVarNameInTable="column接入电压" type="xs:int" default="500" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="方案表" msprop:Generator_RowClassName="方案表Row" msprop:Generator_RowEvHandlerName="方案表RowChangeEventHandler" msprop:Generator_RowDeletedName="方案表RowDeleted" msprop:Generator_RowDeletingName="方案表RowDeleting" msprop:Generator_RowEvArgName="方案表RowChangeEvent" msprop:Generator_TablePropName="方案表" msprop:Generator_RowChangedName="方案表RowChanged" msprop:Generator_UserTableName="方案表" msprop:Generator_RowChangingName="方案表RowChanging" msprop:Generator_TableClassName="方案表DataTable" msprop:Generator_TableVarName="table方案表">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnPropNameInTable="序号Column" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnVarNameInTable="column序号" type="xs:int" />
+              <xs:element name="方案编号" msprop:Generator_UserColumnName="方案编号" msprop:Generator_ColumnPropNameInTable="方案编号Column" msprop:Generator_ColumnPropNameInRow="方案编号" msprop:Generator_ColumnVarNameInTable="column方案编号" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="方案描述" msprop:Generator_UserColumnName="方案描述" msprop:Generator_ColumnPropNameInTable="方案描述Column" msprop:Generator_ColumnPropNameInRow="方案描述" msprop:Generator_ColumnVarNameInTable="column方案描述" type="xs:string" minOccurs="0" />
+              <xs:element name="输出文件" msprop:Generator_UserColumnName="输出文件" msprop:Generator_ColumnPropNameInTable="输出文件Column" msprop:Generator_ColumnPropNameInRow="输出文件" msprop:Generator_ColumnVarNameInTable="column输出文件" type="xs:string" minOccurs="0" />
+              <xs:element name="模拟年" msprop:Generator_UserColumnName="模拟年" msprop:Generator_ColumnPropNameInTable="模拟年Column" msprop:Generator_ColumnPropNameInRow="模拟年" msprop:Generator_ColumnVarNameInTable="column模拟年" type="xs:string" minOccurs="0" />
+              <xs:element name="排序原则" msprop:Generator_UserColumnName="排序原则" msprop:Generator_ColumnPropNameInTable="排序原则Column" msprop:Generator_ColumnPropNameInRow="排序原则" msprop:Generator_ColumnVarNameInTable="column排序原则" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="水文条件" msprop:Generator_UserColumnName="水文条件" msprop:Generator_ColumnPropNameInTable="水文条件Column" msprop:Generator_ColumnPropNameInRow="水文条件" msprop:Generator_ColumnVarNameInTable="column水文条件" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="发电场景" msprop:Generator_UserColumnName="发电场景" msprop:Generator_ColumnPropNameInTable="发电场景Column" msprop:Generator_ColumnPropNameInRow="发电场景" msprop:Generator_ColumnVarNameInTable="column发电场景" type="xs:double" default="1" minOccurs="0" />
+              <xs:element name="迭代精度" msprop:Generator_UserColumnName="迭代精度" msprop:Generator_ColumnPropNameInTable="迭代精度Column" msprop:Generator_ColumnPropNameInRow="迭代精度" msprop:Generator_ColumnVarNameInTable="column迭代精度" type="xs:double" default="0.05" minOccurs="0" />
+              <xs:element name="创建时间" msprop:Generator_UserColumnName="创建时间" msprop:Generator_ColumnPropNameInTable="创建时间Column" msprop:Generator_ColumnPropNameInRow="创建时间" msprop:Generator_ColumnVarNameInTable="column创建时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="修改时间" msprop:Generator_UserColumnName="修改时间" msprop:Generator_ColumnPropNameInTable="修改时间Column" msprop:Generator_ColumnPropNameInRow="修改时间" msprop:Generator_ColumnVarNameInTable="column修改时间" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="线路表" msprop:Generator_RowClassName="线路表Row" msprop:Generator_RowEvHandlerName="线路表RowChangeEventHandler" msprop:Generator_RowDeletedName="线路表RowDeleted" msprop:Generator_RowDeletingName="线路表RowDeleting" msprop:Generator_RowEvArgName="线路表RowChangeEvent" msprop:Generator_TablePropName="线路表" msprop:Generator_RowChangedName="线路表RowChanged" msprop:Generator_UserTableName="线路表" msprop:Generator_RowChangingName="线路表RowChanging" msprop:Generator_TableClassName="线路表DataTable" msprop:Generator_TableVarName="table线路表">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="序号" msprop:Generator_UserColumnName="序号" msprop:Generator_ColumnPropNameInTable="序号Column" msprop:Generator_ColumnPropNameInRow="序号" msprop:Generator_ColumnVarNameInTable="column序号" type="xs:int" minOccurs="0" />
+              <xs:element name="线路ID" msprop:Generator_UserColumnName="线路ID" msprop:Generator_ColumnPropNameInTable="线路IDColumn" msprop:Generator_ColumnPropNameInRow="线路ID" msprop:Generator_ColumnVarNameInTable="column线路ID" type="xs:int" minOccurs="0" />
+              <xs:element name="线路名称" msprop:Generator_UserColumnName="线路名称" msprop:Generator_ColumnPropNameInTable="线路名称Column" msprop:Generator_ColumnPropNameInRow="线路名称" msprop:Generator_ColumnVarNameInTable="column线路名称" type="xs:string" default="&quot;非空&quot;" minOccurs="0" />
+              <xs:element name="单回Pmax" msprop:Generator_UserColumnName="单回Pmax" msprop:Generator_ColumnPropNameInTable="单回PmaxColumn" msprop:Generator_ColumnPropNameInRow="单回Pmax" msprop:Generator_ColumnVarNameInTable="column单回Pmax" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="回路数" msprop:Generator_UserColumnName="回路数" msprop:Generator_ColumnPropNameInTable="回路数Column" msprop:Generator_ColumnPropNameInRow="回路数" msprop:Generator_ColumnVarNameInTable="column回路数" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="EFOR" msprop:Generator_UserColumnName="EFOR" msprop:Generator_ColumnPropNameInTable="EFORColumn" msprop:Generator_ColumnPropNameInRow="EFOR" msprop:Generator_ColumnVarNameInTable="columnEFOR" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="投产年月" msprop:Generator_UserColumnName="投产年月" msprop:Generator_ColumnPropNameInTable="投产年月Column" msprop:Generator_ColumnPropNameInRow="投产年月" msprop:Generator_ColumnVarNameInTable="column投产年月" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="投产进度" msprop:Generator_UserColumnName="投产进度" msprop:Generator_ColumnPropNameInTable="投产进度Column" msprop:Generator_ColumnPropNameInRow="投产进度" msprop:Generator_ColumnVarNameInTable="column投产进度" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="退役年月" msprop:Generator_UserColumnName="退役年月" msprop:Generator_ColumnPropNameInTable="退役年月Column" msprop:Generator_ColumnPropNameInRow="退役年月" msprop:Generator_ColumnVarNameInTable="column退役年月" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="退役进度" msprop:Generator_UserColumnName="退役进度" msprop:Generator_ColumnPropNameInTable="退役进度Column" msprop:Generator_ColumnPropNameInRow="退役进度" msprop:Generator_ColumnVarNameInTable="column退役进度" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="动态投资" msprop:Generator_UserColumnName="动态投资" msprop:Generator_ColumnPropNameInTable="动态投资Column" msprop:Generator_ColumnPropNameInRow="动态投资" msprop:Generator_ColumnVarNameInTable="column动态投资" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="维护费率" msprop:Generator_UserColumnName="维护费率" msprop:Generator_ColumnPropNameInTable="维护费率Column" msprop:Generator_ColumnPropNameInRow="维护费率" msprop:Generator_ColumnVarNameInTable="column维护费率" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="单位输电费" msprop:Generator_UserColumnName="单位输电费" msprop:Generator_ColumnPropNameInTable="单位输电费Column" msprop:Generator_ColumnPropNameInRow="单位输电费" msprop:Generator_ColumnVarNameInTable="column单位输电费" type="xs:double" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:系统表" />
+      <xs:field xpath="mstns:节点ID" />
+    </xs:unique>
+    <xs:unique name="年曲线_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:年曲线" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+    <xs:unique name="日曲线_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:日曲线" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+    <xs:unique name="机组表_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:机组表" />
+      <xs:field xpath="mstns:机组ID" />
+    </xs:unique>
+    <xs:unique name="方案表_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:方案表" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+    <xs:unique name="线路表Key1">
+      <xs:selector xpath=".//mstns:线路表" />
+      <xs:field xpath="mstns:序号" />
+    </xs:unique>
+    <xs:keyref name="FK_系统表_线路表" refer="Constraint1" msprop:rel_Generator_UserParentTable="系统表" msprop:rel_Generator_UserChildTable="线路表" msprop:rel_Generator_RelationVarName="relationFK_系统表_线路表" msprop:rel_Generator_ChildPropName="Get线路表Rows" msprop:rel_Generator_UserRelationName="FK_系统表_线路表" msprop:rel_Generator_ParentPropName="系统表Row">
+      <xs:selector xpath=".//mstns:线路表" />
+      <xs:field xpath="mstns:线路ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_系统表_机组表" refer="Constraint1" msprop:rel_Generator_UserParentTable="系统表" msprop:rel_Generator_UserChildTable="机组表" msprop:rel_Generator_RelationVarName="relationFK_系统表_机组表" msprop:rel_Generator_ChildPropName="Get机组表Rows" msprop:rel_Generator_ParentPropName="系统表Row" msprop:rel_Generator_UserRelationName="FK_系统表_机组表">
+      <xs:selector xpath=".//mstns:机组表" />
+      <xs:field xpath="mstns:电站ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_系统表_日曲线" refer="Constraint1" msprop:rel_Generator_UserParentTable="系统表" msprop:rel_Generator_UserChildTable="日曲线" msprop:rel_Generator_RelationVarName="relationFK_系统表_日曲线" msprop:rel_Generator_ChildPropName="Get日曲线Rows" msprop:rel_Generator_ParentPropName="系统表Row" msprop:rel_Generator_UserRelationName="FK_系统表_日曲线">
+      <xs:selector xpath=".//mstns:日曲线" />
+      <xs:field xpath="mstns:DayID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

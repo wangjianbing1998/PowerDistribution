@@ -1,0 +1,63 @@
+<HUST_CMD>
+  <xs:schema id="HUST_CMD" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="HUST_CMD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ProS">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="序号" type="xs:double" minOccurs="0" />
+                <xs:element name="状态" type="xs:double" minOccurs="0" />
+                <xs:element name="方案编号" type="xs:double" minOccurs="0" />
+                <xs:element name="模拟年份" type="xs:double" minOccurs="0" />
+                <xs:element name="模拟选项" type="xs:double" minOccurs="0" />
+                <xs:element name="水文条件" type="xs:double" minOccurs="0" />
+                <xs:element name="风光场景" type="xs:double" minOccurs="0" />
+                <xs:element name="收敛精度" type="xs:double" minOccurs="0" />
+                <xs:element name="输入文件" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="方案简述" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Sheet">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="F1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ProS>
+    <序号>0</序号>
+    <状态>-99</状态>
+    <方案编号>1</方案编号>
+    <模拟年份>2020</模拟年份>
+    <模拟选项>0</模拟选项>
+    <水文条件>1</水文条件>
+    <风光场景>0.8</风光场景>
+    <收敛精度>0.05</收敛精度>
+    <输入文件>C:\Users\zhang\Desktop\调试用\Hust数据\南疆电网1</输入文件>
+    <方案简述>外部调用HUST ProS运行模拟计算</方案简述>
+  </ProS>
+</HUST_CMD>
