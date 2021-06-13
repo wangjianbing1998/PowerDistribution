@@ -1175,7 +1175,7 @@ def get_result(debug=False):
         technical_statics_result = load_object(technical_statics_result_filename)
     else:
         technical_statics_result = TechnicalStaticsResult(solver, power_result, electricity_result, debug)
-    # save_object(technical_statics_result, technical_statics_result_filename)
+        save_object(technical_statics_result, technical_statics_result_filename)
 
     technical_statics_result.to_excel(False, technical_statics_result_excel)
     print(technical_statics_result)

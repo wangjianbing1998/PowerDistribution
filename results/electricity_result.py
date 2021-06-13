@@ -14,6 +14,7 @@ from collections import defaultdict
 import pandas as pd
 
 from results.base_result import BaseResult, MonthData
+from util import save_result
 
 
 class ElectricityResultElement(object):
@@ -34,7 +35,7 @@ class ElectricityResultElement(object):
 			'新能源弃电': defaultdict(),
 		}  # 还有联外{线路}:defaultdict()
 
-		self.columns = ['节点', '项目', '合计'] + [f'{month}月' for month in range(1, 13)]
+		self.columns = ['项目编号', '节点', '项目', '合计'] + [f'{month}月' for month in range(1, 13)]
 
 		self.data = pd.DataFrame(columns=self.columns)
 		logging.debug(f'ElectricityResultElement Construced')
@@ -62,13 +63,15 @@ class ElectricityResultElement(object):
 		logging.debug(f'Get {to_name} for {node_id} in {date_type}')
 
 		def get_one_base(index=0, project_name=None):
+			global project_id
 			if project_name is None:
 				project_name = to_name
 
 			month_data = self.get_month_data(from_name, node_id, index, date_type)
 			self._data[project_name][node_id] = month_data
 			self.data = self.data.append(
-				pd.DataFrame([[node_id, project_name] + month_data.data], columns=self.columns))
+				pd.DataFrame([[project_id, node_id, project_name] + month_data.data], columns=self.columns))
+			project_id += 1
 
 		if from_name == 'xianluchaoliu':
 			sample_power_result = self.power_result(0, 1, date_type)
@@ -108,10 +111,7 @@ class ElectricityResultElement(object):
 		return MonthData(month_data)
 
 	def to_excel(self, file_path):
-		self.data.sort_values(by=['节点', '项目'], ascending=True, inplace=True)
-		self.data.to_csv(file_path, index=False, encoding='utf_8_sig')
-		self.data.to_excel(file_path.replace('.csv', '.xlsx'), index=False)
-		logging.info(f'Saved {file_path}')
+		save_result(self.data, file_path, sort_bys=['节点', '项目编号'])
 
 
 class ElectricityResult(BaseResult):
@@ -139,3 +139,6 @@ class ElectricityResult(BaseResult):
 	def to_excel(self, date_type=False, file_path="electricity_result.csv"):
 		data = self(date_type)
 		data.to_excel(file_path)
+
+
+project_id = 0

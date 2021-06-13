@@ -14,6 +14,7 @@ from collections import defaultdict
 import pandas as pd
 
 from results.base_result import BaseResult, HourData, OneData
+from util import save_result
 
 
 class PowerResultElement(object):
@@ -112,7 +113,8 @@ class PowerResultElement(object):
 
 		def _zhuangji(power_generators, types: [int]) -> int:
 			return sum(
-				[power_generator.zhuangji for power_generator in power_generators if power_generator.type in types and node_id == power_generator.systemID])
+				[power_generator.zhuangji for power_generator in power_generators if
+				 power_generator.type in types and node_id == power_generator.systemID])
 
 		power_generators = self.solver.powerGenerators
 
@@ -183,17 +185,20 @@ class PowerResultElement(object):
 				self.xinnengyuanqidian[node_id] = HourData(abandonThisNode[5:])
 
 	def to_excel(self, file_path):
-		logging.info(f'Saved into {file_path}')
 
 		def append_line(df, line_datas: 'data or datas', node_id, project_names: 'name or names'):
+			global project_id
 			if isinstance(line_datas, list):
 				for index, line_data in enumerate(line_datas):
-					df = df.append(pd.DataFrame([[node_id, project_names[index]] + line_data.data], columns=columns))
+					df = df.append(
+						pd.DataFrame([[project_id, node_id, project_names[index]] + line_data.data], columns=columns))
+					project_id += 1
 			else:
-				df = df.append(pd.DataFrame([[node_id, project_names] + line_datas.data], columns=columns))
+				df = df.append(pd.DataFrame([[project_id, node_id, project_names] + line_datas.data], columns=columns))
+				project_id += 1
 			return df
 
-		columns = ['节点', '项目', 'max', 'min', 'ave', '24小时总计'] + [f'{h}h' for h in range(1, 25)]
+		columns = ['项目编号', '节点', '项目', 'max', 'min', 'ave', '24小时总计'] + [f'{h}h' for h in range(1, 25)]
 		df = pd.DataFrame(columns=columns)
 		for node_id in self.node_ids:
 			df = append_line(df, self.fuhe[node_id], node_id, '负荷')
@@ -207,9 +212,8 @@ class PowerResultElement(object):
 			df = append_line(df, self.xinnengyuanqidian[node_id], node_id, '新能源弃电')
 
 		self.data = df
-		df.sort_values(by=['节点','项目'],ascending=True,inplace=True)
-		df.to_csv(file_path, index=False, encoding='utf_8_sig')
-		df.to_excel(file_path.replace('.csv','.xlsx'), index=False)
+
+		save_result(df, file_path, sort_bys=['节点', '项目编号'])
 
 
 class PowerResult(BaseResult):
@@ -243,3 +247,6 @@ class PowerResult(BaseResult):
 	def to_excel(self, scene_num, month, date_type=False, file_path="result0125.xlsx"):
 		data = self(scene_num, month, date_type)
 		data.to_excel(file_path)
+
+
+project_id = 0

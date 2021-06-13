@@ -83,6 +83,15 @@ def load_object(filename):
 	return obj
 
 
+def save_result(df, file_path, sort_bys=None):
+	if sort_bys is not None:
+		df.sort_values(by=sort_bys, ascending=True, inplace=True)
+	if '项目编号' in df:
+		df.drop('项目编号', axis=1, inplace=True)
+	df.to_csv(file_path, index=False, encoding='utf_8_sig')
+	df.to_excel(file_path.replace('.csv', '.xlsx'), index=False)
+
+
 if __name__ == "__main__":
 	class A():
 		AA = 1

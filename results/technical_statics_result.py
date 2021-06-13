@@ -13,12 +13,14 @@ import logging
 import pandas as pd
 
 from results.base_result import BaseResult, OneData
+from util import save_result
 
 
 class TechnicalStaticsResultElement(object):
 
 	def __init__(self, solver, power_result, electricity_result, date_type=False):
 		self.data = {
+			'项目编号': [],  # [OneData()]
 			'项目': ['火电', '新能源', '风电', '光伏', '合计'],  # [OneData()]
 			'装机': [0 for _ in range(5)],  # [OneData()]
 			'投资': [0 for _ in range(5)],
@@ -27,6 +29,8 @@ class TechnicalStaticsResultElement(object):
 			'总发电量': [0 for _ in range(5)],
 			'弃电量': [0 for _ in range(5)],
 		}
+		self.data['项目编号'] = list(range(len(self.data['项目'])))
+
 		self.solver = solver
 		self.power_result_element = power_result(0, 1, date_type)
 		self.electricity_result_element = electricity_result(date_type)
@@ -138,9 +142,7 @@ class TechnicalStaticsResultElement(object):
 
 	def to_excel(self, filepath):
 		self.data = pd.DataFrame(self.data)
-
-		self.data.to_csv(filepath, index=False, encoding='utf_8_sig')
-		self.data.to_excel(filepath.replace('.csv', '.xlsx'), index=False)
+		save_result(self.data, filepath)
 
 	def __repr__(self):
 		return f'{self.data}'
